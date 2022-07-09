@@ -30,14 +30,14 @@ export const App = () => {
 
   return (
     <>
-      <Section title={'Please leave feedback'}>
+      <Section title="Please leave feedback">
         <FeedbackOptions
           options={Object.keys({ good, neutral, bad })}
           onLeaveFeedback={onFeedbackClick}
         />
       </Section>
 
-      <Section title={'Statistics'}>
+      <Section title="Statistics">
         {total > 0 ? (
           <Statistics
             good={good}
